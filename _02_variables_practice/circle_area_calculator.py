@@ -15,14 +15,14 @@ if __name__ == '__main__':
     # simpledialog.askinteger()
     radius=simpledialog.askinteger(title='turtle', prompt='make a radius')
     # Make a new turtle
-    jack=turtle.Turtle
+    jack=turtle.Turtle()
     # Have your turtle draw a circle with the correct radius
     # my_turtle.circle()
-    jack.circle(radius)
+    jack.circle(radius=radius)
     # Call the turtle .penup() method
     jack.penup()
     # Move your turtle to a new x,y position using .goto()
-    jack.goto()
+    jack.goto(x=4,y=5)
     # Calculate the area of your circle and store it in a variable
     # Hint, you can use math.pi
     area=math.pi*radius*radius
