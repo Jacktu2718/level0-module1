@@ -9,9 +9,20 @@ if __name__ == '__main__':
     window.withdraw()
     
     # Make a new turtle
-    jack=turtle.Turtle
+    jack=turtle.Turtle()
     # Ask the user what shape they want to draw and store it in a variable
-    drawshape=simpledialog.askinteger(title='shape selector', prompt='What shape do you want to draw?')
+    drawshape=simpledialog.askstring(title='shape selector', prompt='What shape do you want to draw?')
     # Draw the shape requested by the user using if-elif-else statements
+if drawshape=='triangle':
+    jack.forward(100)
+    jack.right(120)
+    jack.forward(100)
+    jack.right(120)
+    jack.forward(100)
+if drawshape=='square':
+    for i in range(3):
+        jack.forward(100)
+        jack.right(270)
+    jack.forward(100)
 
     # Call the turtle .done() method
