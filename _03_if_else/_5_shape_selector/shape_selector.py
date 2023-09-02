@@ -13,16 +13,17 @@ if __name__ == '__main__':
     # Ask the user what shape they want to draw and store it in a variable
     drawshape=simpledialog.askstring(title='shape selector', prompt='What shape do you want to draw?')
     # Draw the shape requested by the user using if-elif-else statements
-if drawshape=='triangle':
-    jack.forward(100)
-    jack.right(120)
-    jack.forward(100)
-    jack.right(120)
-    jack.forward(100)
-if drawshape=='square':
-    for i in range(3):
+    if drawshape=='triangle':
         jack.forward(100)
-        jack.right(270)
-    jack.forward(100)
+        jack.right(120)
+        jack.forward(100)
+        jack.right(120)
+        jack.forward(100)
+    turtle.done()
+    if drawshape=='square':
+        for i in range(4):
+            jack.right(270)
+            jack.forward(100)
+    turtle.done()
 
     # Call the turtle .done() method
